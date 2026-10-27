@@ -1,6 +1,5 @@
-# application
+﻿# application
 
-<p align='right'>neozng1@hnu.edu.cn</p>
 
 这是application层的说明。
 

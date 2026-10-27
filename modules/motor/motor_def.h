@@ -1,11 +1,10 @@
-/**
+﻿/**
  * @file motor_def.h
  * @author neozng
  * @brief  电机通用的数据结构定义
  * @version beta
  * @date 2022-11-01
  *
- * @copyright Copyright (c) 2022 HNU YueLu EC all rights reserved
  *
  */
 

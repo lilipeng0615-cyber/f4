@@ -1,11 +1,10 @@
-/**
+﻿/**
  * @file referee_vt_task.c
- * @author LHXY (cjy719@hnu.edu.cn)
+ * @author LHXY
  * @brief 
  * @version 0.1
  * @date 2026-03-27
  * 
- * @copyright Copyright (c) 2026
  * 
  */
 #include "referee_vt_task.h"

@@ -1,6 +1,5 @@
-# bsp_usart
+﻿# bsp_usart
 
-<p align='right'>neozng1@hnu.edu.cn</p>
 
 > TODO: 增加发送队列以解决短时间内调用`USARTSend()`发生丢包的问题,目前仅支持DMA。还需要提供阻塞和IT模式以供选择，参考bspiic和spi进行实现。
 > 可以直接在发送函数的参数列表添加发送模式选择,或增加instance成员变量,并提供设置模式接口,两者各有优劣

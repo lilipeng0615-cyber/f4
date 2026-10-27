@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file bsp_usb.h
  * @author your name (you@domain.com)
  * @brief 提供对usb vpc(virtal com port)的操作接口,hid和msf考虑后续添加
@@ -6,7 +6,6 @@
  * @version 0.1
  * @date 2023-02-09
  *
- * @copyright Copyright (c) 2023
  *
  */
 #pragma once

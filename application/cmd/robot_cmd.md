@@ -1,6 +1,5 @@
-# robot_cmd
+﻿# robot_cmd
 
-<p align='right'>neozng1@hnu.edu.cn</p>
 
 ## 运行流程
 

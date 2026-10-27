@@ -1,6 +1,5 @@
-# algorithms
+﻿# algorithms
 
-<p align='right'>neozng1@hnu.edu.cn</p>
 
 > TODO:
 > 1. 实现麦轮和全向轮的速度解算

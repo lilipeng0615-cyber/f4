@@ -1,6 +1,5 @@
-# can_comm
+﻿# can_comm
 
-<p align='right'>neozng1@hnu.edu.cn</p>
 
 > TODO:
 >

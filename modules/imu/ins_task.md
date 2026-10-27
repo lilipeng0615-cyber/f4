@@ -1,6 +1,5 @@
-# ins_task
+﻿# ins_task
 
-<p align='right'>neozng1@hnu.edu.cn</p>
 
 ## 硬触发流程
 

@@ -1,11 +1,10 @@
-/**
+﻿/**
  * @file master_process.c
  * @author neozng
  * @brief  module for recv&send vision data
  * @version beta
  * @date 2022-11-03
  * @todo 增加对串口调试助手协议的支持,包括vofa和serial debug
- * @copyright Copyright (c) 2022
  *
  */
 #include "master_process.h"

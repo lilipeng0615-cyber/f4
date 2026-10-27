@@ -1,11 +1,10 @@
-/**
+﻿/**
  * @file dmmotor.c
- * @author MSC1309(msc1309@hnu.edu.cn)
+ * @author MSC1309
  * @brief 达妙电机驱动，模仿dji_motor.c，对老代码进行优化而产出的统一，稳定的版本
  * @version 0.1
  * @date 2026-07-30
  *
- * @copyright Copyright (c) 2026
  *
  */
 

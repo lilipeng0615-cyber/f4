@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file controller.c
  * @author wanghongxi
  * @author modified by neozng
@@ -6,7 +6,6 @@
  * @version beta
  * @date 2022-11-01
  *
- * @copyrightCopyright (c) 2022 HNU YueLu EC all rights reserved
  */
 #include "controller.h"
 #include "memory.h"

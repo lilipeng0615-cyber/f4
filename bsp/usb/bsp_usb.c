@@ -1,11 +1,10 @@
-/**
+﻿/**
  * @file bsp_usb.c
  * @author your name (you@domain.com)
  * @brief usb是单例bsp,因此不保存实例
  * @version 0.1
  * @date 2023-02-09
  *
- * @copyright Copyright (c) 2023
  *
  */
 

@@ -1,6 +1,5 @@
-# VSCode+Ozone开发STM32的方法
+﻿# VSCode+Ozone开发STM32的方法
 
-<center><b><font face="楷体">neozng1@hnu.edu.cn</font></b></center>
 
 [TOC]
 

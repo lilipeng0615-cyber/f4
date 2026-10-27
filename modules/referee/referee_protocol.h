@@ -1,10 +1,9 @@
-/**
+﻿/**
  * @file referee_protocol.h
  * @author kidneygood (you@domain.com)
  * @version 0.1
  * @date 2022-12-02
  *
- * @copyright Copyright (c) HNU YueLu EC 2022 all rights reserved
  *
  */
 

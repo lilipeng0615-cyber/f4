@@ -1,6 +1,5 @@
-# message_center
+﻿# message_center
 
-<p align='right'>neozng1@hnu.edu.cn</p>
 
 > TODO:
 >

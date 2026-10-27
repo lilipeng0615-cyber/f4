@@ -1,12 +1,11 @@
-/**
+﻿/**
  * @file seasky_protocol.c
  * @author Liu Wei
  * @author modified by Neozng
- * @brief 湖南大学RoBoMatster串口通信协议
+ * @brief 上位机串口通信协议
  * @version 0.1
  * @date 2022-11-03
  *
- * @copyright Copyright (c) 2022
  *
  */
 

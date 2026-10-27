@@ -1,11 +1,10 @@
-/**
+﻿/**
  * @file referee_custom.c
- * @author LHXY (cjy719@hnu.edu.cn)
+ * @author LHXY
  * @brief 用以实现图传链路机器人发送功能，主要是自定义控制器
  * @version 0.1
  * @date 2026-03-27
  * 
- * @copyright Copyright (c) 2026
  * 
  */
 #include "referee_vt.h"

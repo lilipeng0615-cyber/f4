@@ -1,6 +1,5 @@
-# APP层应用编写指引
+﻿# APP层应用编写指引
 
-<p align='right'>neozng1@hnu.edu.cn</p>
 
 ## 通信机制
 
