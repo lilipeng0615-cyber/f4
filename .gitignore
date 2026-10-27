@@ -52,3 +52,9 @@ build
 .vscode/.cortex-debug.peripherals.state.json
 .vscode/.cortex-debug.registers.state.json
 *.jdebug*
+# IDE / local environment (per-machine, not portable)
+.settings/
+.vscode/
+.clangd
+.idea/
+.cache/

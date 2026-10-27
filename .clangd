@@ -1,4 +1,0 @@
-CompileFlags:
-  Remove:
-    - mthumb-interwork
-  CompilationDatabase: build
