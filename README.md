@@ -1,33 +1,8 @@
-# YueLu2022/2023 EC basic_framework-dev
+﻿# RoboMaster 电控基础框架（STM32F407 / 大疆 C 板）
 
-湖南大学RoboMaster跃鹿战队2022-2023电控通用嵌入式框架。
-
-<div align=center>
-	<img src=".assets/yuelu_badge.png"/>
-	<p>
-		<img src="https://img.shields.io/badge/version-beta-blue"/>
-		<img src="https://img.shields.io/badge/license-MIT-green"/>
-    	<img src="https://github.com/HNUYueLuRM/basic_framework/actions/workflows/c-cpp.yml/badge.svg"/>
-    </p>
-   	<p>
-		<img src="https://gitee.com/HNUYueLuRM/basic_framework/badge/star.svg"/>
-		<img src="https://gitee.com/HNUYueLuRM/basic_framework/badge/fork.svg"/>
-	</p>
-    <h5><p><font face="consolas">Best RoboMaster embedded EC open-source code ever?</p></h>
-</div>
-
-
-
-> ***也许不是最好的？但一定是最完整最详细最适合上手的电控开源！***
-
-[TOC]
+基于 STM32F407IGH6 的机器人电控框架，采用 bsp / module / app 三层结构，支持多兵种机器人快速部署与移植。
 
 ***==别忘了仓库根目录下的`.Doc`文件夹中有关于配置环境和开发更详尽的说明！==***
-
-- 若无法访问github，戳[gitee仓库](https://gitee.com/hnuyuelurm/basic_framework)
-- 若gitee内容被屏蔽，戳[github仓库](https://github.com/HNUYueLuRM/basic_framework)
-
-> 基于basic_framework打造的C++进阶重构版本[***powerful_framework***](https://gitee.com/hnuyuelurm/powerful_framework)现已发布！增加全新的消息交互机制和严格的跨任务数据读写保护，采用了现代构建系统CMake+Ninja以追求极致的编译速度，各种针对嵌入式的编译优化全开，DIY程度进一步提升，更有自定义CMSIS-DSP和Eigen等扩展库支持！快来加入试用/和我们一起开发吧😋
 
 
 
@@ -39,7 +14,7 @@
 
 ### 起源
 
-这是湖南大学RoboMaster跃鹿战队电控组2022-2023赛季的通用嵌入式控制框架，可用于**机器人主控**、自研模组（imu/测距等各种传感器）、超级电容控制器等。
+这是本工程采用的 RoboMaster 电控框架，可用于**机器人主控**、自研模组（imu/测距等各种传感器）、超级电容控制器等。
 
 从目前的RoboMaster开源社区来看，大部分队伍都没有一套规则统一，符合较大规模软件开发原则的框架，有些学校连不同兵种代码都相去甚远，甚至连队伍用于传承的代码注释都寥寥无几，全靠师傅带徒弟言传身教。当然，不乏有广东工业大学DynamicX开源的rm_control这样规范且先进的系统，但基于Linux、ROS、C++的这套软件栈对于新人来说还是过于复杂（但我们很推荐熟悉基本工具的同学使用！）。
 
@@ -76,9 +51,8 @@
 
    ![balance](.assets/balance.gif)
 
-这些机器人的程序均基于basic_framework打造，已在我们的仓库中提供：[HNUYueLuRM](https://gitee.com/hnuyuelurm)
+这些机器人的程序均基于本框架打造。
 
-> 更多测试视频可以关注我们的bilibili账号：[湖南大学跃鹿战队](https://space.bilibili.com/522795884)，或在bilibili搜索跃鹿战队，观看我们的比赛视频。
 
 ### 可用功能
 
@@ -277,7 +251,7 @@ app、module和bsp都有相应的rtos任务。其中bsp为创建任务提供了�
 
 框架中的三层结构都有详尽的注释帮助阅读和二次开发，三个抽象层都有各自总览的说明文档，而每个bsp/module/app都配有对应的个性化说明文档，提供了接口说明和改进或进一步开发的建议。
 
-建议以自上而下的方式阅读代码，app-》module-》bsp，为此我们还提供了框架的说明视频，分别讲解每个抽象层和总体的设计思路，介绍了bsp的依赖HAL，还有一些杂碎的开发相关知识：[basic_framework教程](https://space.bilibili.com/522795884/channel/collectiondetail)
+建议以自上而下的方式阅读代码，app-》module-》bsp。
 
 ### 运行单个bsp/module测试
 
@@ -308,7 +282,7 @@ ST官方现在将HAL放入github维护。想要获取最新的支持，可以自
 
 若希望自己编译特定版本的cmsis-dsp或cmsis-os，请前往官方的github仓库下载，将构建规则加入makefile。
 
-我们还增加了CMakeLists.txt以融入更现代化的构建系统，若你希望使用cmake，相信你有能力配置相关的开发环境。可以参考我们的[***powerful_framework***](https://gitee.com/hnuyuelurm/powerful_framework).
+我们还增加了CMakeLists.txt以融入更现代化的构建系统，若你希望使用cmake，相信你有能力配置相关的开发环境。
 
 如果实时系统任务需要的栈空间不够，请在CubeMX初始化配置中增大任务栈。一些freertos支持的高级功能请自行在配置页开启宏定义后重新生成。
 
@@ -339,4 +313,4 @@ ST官方现在将HAL放入github维护。想要获取最新的支持，可以自
 
 本框架设计参考了哈尔滨工业大学（深圳）南工骁鹰🦅战队的EC_framework以及RoboMaster官方的RoboRTS-firmware🤖。姿态解算改进自哈尔滨工程大学创梦之翼🛩️的四元数EKF姿态解算。裁判系统数据解析移植了深圳大学RoboPilot2021年电控英雄开源代码。
 
-感谢2022-2023赛季跃鹿战队电控组参与新框架测试和开发的队员们，包括设计出机器人平台的机械组队员，还有一起联调的视觉组队员，以及负责拍摄、记录、宣传的运营组成员。
+感谢参与框架测试和开发的队友，以及负责机械设计、视觉联调与记录的伙伴。
