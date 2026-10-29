@@ -1,4 +1,5 @@
 // app
+#include "can.h"
 #include "robot_def.h"
 #include "robot_cmd.h"
 // module
@@ -9,6 +10,7 @@
 #include "general_def.h"
 #include "dji_motor.h"
 #include "bmi088.h"
+#include "step_motor.h"
 // bsp
 #include "bsp_dwt.h"
 #include "bsp_log.h"
@@ -45,11 +47,36 @@ static Shoot_Ctrl_Cmd_s shoot_cmd_send;      // 传递给发射的控制信息
 static Shoot_Upload_Data_s shoot_fetch_data; // 从发射获取的反馈信息
 
 static Robot_Status_e robot_state; // 机器人整体工作状态
+static StepMotorInstance *step_motor1,*step_motor2;//zdt步进电机
 
 BMI088Instance *bmi088_test; // 云台IMU
 BMI088_Data_t bmi088_data;
 void RobotCMDInit()
 {
+    StepMotor_Init_Config_s step_config1 = {
+        .can_init_config = {
+            .can_handle = &hcan1,
+            .tx_id  = 1,
+        },
+        .motor_reverse_flag = MOTOR_DIRECTION_NORMAL,
+    };
+
+    StepMotor_Init_Config_s step_config2 = {
+        .can_init_config = {
+            .can_handle = &hcan1,
+            .tx_id  = 2,
+        },
+        .motor_reverse_flag = MOTOR_DIRECTION_NORMAL,
+    };
+
+    step_motor1 = StepMotorInit(&step_config1);
+    step_motor2 = StepMotorInit(&step_config2);
+
+    StepMotorEnable(step_motor1);
+    StepMotorSetSpeed(step_motor1, 0, 100, 10);
+
+    StepMotorEnable(step_motor2);
+    StepMotorSetSpeed(step_motor2, 1, 100, 10);
     // BMI088_Init_Config_s bmi088_config = {
     //     .cali_mode = BMI088_CALIBRATE_ONLINE_MODE,
     //     .work_mode = BMI088_BLOCK_TRIGGER_MODE,
