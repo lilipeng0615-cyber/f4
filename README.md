@@ -177,7 +177,7 @@ J-Link 的配置保留在 `openocd_jlink.cfg` 与 `stm32.jflash`。
 
 ## 文档
 
-`.Doc` 目录下有 **8** 篇 markdown：
+`.Doc` 目录下有 **9** 篇 markdown：
 
 - [Bug_Report](.Doc/Bug_Report.md) — 提交 issue 的模板范例
 - [TODO](.Doc/TODO.md) — 框架后续开发计划
@@ -187,6 +187,7 @@ J-Link 的配置保留在 `openocd_jlink.cfg` 与 `stm32.jflash`。
 - [必须做&禁止做](.Doc/必须做&禁止做.md) — 字如其名
 - **[架构介绍与开发指南](.Doc/架构介绍与开发指南.md)** — **开发必看**，编码与命名规范、文件树
 - [让VSCode成为更称手的IDE](.Doc/让VSCode成为更称手的IDE.md) — 插件与个性化配置
+- [版本更替](.Doc/版本更替.md) — 各版本改动记录
 
 每个 `bsp/` 和 `modules/` 的子目录里还有各自的说明文档，包含接口说明和测试用例。
 
